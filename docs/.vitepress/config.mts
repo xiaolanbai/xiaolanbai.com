@@ -83,8 +83,15 @@ export default defineConfig({
     },
     // 编辑链接
     editLink: {
-      pattern: 'https://github.com/xiaolanbai/xiaolanbai.com/docs/:path',
+      pattern: 'https://github.com/xiaolanbai/xiaolanbai.com/blob/main/docs/:path',
       text: '在 GitHub 上编辑此页'
+    },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'short'
+      }
     },
     // 自定义出现在上一页和下一页链接上方的文本
     docFooter: {
@@ -98,6 +105,4 @@ export default defineConfig({
     returnToTopLabel: "返回顶部",
     externalLinkIcon: true,
   },
-  // 最后更新时间
-  lastUpdated: true
 })
